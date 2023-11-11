@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(248 250 252);
+  min-height: 100vh;
+}
+
+.card-wrapper{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+    width: 500px;
+    gap: .5rem;
+    text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+@media only screen and (max-width: 600px) {
+  
+.card-wrapper{
+    width: 400px;
+  font-size: 1rem;
+
+}
+}
+@media only screen and (max-width: 420px) {
+  
+.card-wrapper{
+    width: 300px;
+  font-size: .7rem;
+
+}
+}
+.öffnungszeiten{
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.info-sec{
+  display: flex;
+  gap: .5rem;
+  flex: .5;
+}
+
+.info-card{
+  position: relative;
+  
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: rgb(226 232 240);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 500px;
+  color: rgb(39 39 42);
+  display: flex;
+justify-content: center;
+flex-direction: column;
+}
+@media only screen and (max-width: 420px) {
+  
+  .info-card{
+    padding: .5rem 1rem .5rem 1rem;
+
+  }
+  }
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 4 / 2; }
+.div3 { grid-area: 2 / 2 / 4 / 3; 
+}
+.card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oz-wrapper{
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  text-transform: none;
+  width: fit-content ;
+}
+
+.warning-icon{
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  filter: invert(12%) sepia(5%) saturate(568%) hue-rotate(202deg) brightness(99%) contrast(91%);
+}
+@media only screen and (max-width: 420px) {
+  
+  .warning-icon{
+    width: 10px;
+
+  }
+  }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
